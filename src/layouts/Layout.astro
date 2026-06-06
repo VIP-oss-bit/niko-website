@@ -22,13 +22,21 @@ const { title, description } = Astro.props;
     <meta property="og:image" content="/og-image.png" />
     <link rel="icon" type="image/png" href="/favicon.png" />
 
-    {/* Fonts */}
+    {/* Fonts — loaded without blocking the first paint */}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <slot />
@@ -55,7 +63,7 @@ const { title, description } = Astro.props;
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     background: var(--paper);
     color: var(--ink);
     font-size: 17px;
@@ -87,7 +95,7 @@ const { title, description } = Astro.props;
     gap: 1.5rem;
   }
   .brand {
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-size: 1.15rem;
     font-weight: 500;
     letter-spacing: -0.01em;
@@ -129,7 +137,7 @@ const { title, description } = Astro.props;
     font-weight: 500;
   }
   .hero h1 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-weight: 300;
     font-size: clamp(2.5rem, 6vw, 5rem);
     line-height: 1.02;
@@ -143,7 +151,7 @@ const { title, description } = Astro.props;
     color: var(--accent);
   }
   .hero-sub {
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-size: 1.3rem;
     font-weight: 300;
     font-style: italic;
@@ -202,7 +210,7 @@ const { title, description } = Astro.props;
     font-weight: 500;
   }
   h2 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-weight: 400;
     font-size: clamp(2rem, 4vw, 2.8rem);
     line-height: 1.1;
@@ -215,7 +223,7 @@ const { title, description } = Astro.props;
     color: var(--accent);
   }
   h3 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-weight: 500;
     font-size: 1.2rem;
     margin: 0 0 0.5rem;
@@ -227,7 +235,7 @@ const { title, description } = Astro.props;
     margin-bottom: 1rem;
   }
   p.lede {
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.55;
@@ -275,7 +283,7 @@ const { title, description } = Astro.props;
     color: var(--accent);
     position: absolute;
     left: 0;
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-size: 1.2rem;
     line-height: 1;
     top: 0.4rem;
@@ -317,7 +325,7 @@ const { title, description } = Astro.props;
     background: rgba(154, 74, 31, 0.04);
     margin: 2rem 0;
     max-width: 700px;
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-style: italic;
     font-size: 1.15rem;
     line-height: 1.5;
@@ -341,7 +349,7 @@ const { title, description } = Astro.props;
     margin-bottom: 2rem;
   }
   footer h4 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-weight: 500;
     font-size: 1.05rem;
     color: var(--paper);
