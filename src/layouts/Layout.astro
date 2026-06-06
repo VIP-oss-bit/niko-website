@@ -47,7 +47,7 @@ const { title, description } = Astro.props;
   :root {
     --ink: #1A2238;
     --ink-soft: #3A4358;
-    --ink-mute: #6B7280;
+    --ink-mute: #565D6B;
     --paper: #FAFAF7;
     --paper-warm: #F2EFE7;
     --rule: #D9D5C9;
@@ -62,8 +62,17 @@ const { title, description } = Astro.props;
   html {
     scroll-behavior: smooth;
   }
+  /* Metric-matched fallback: keeps text from shifting when Inter loads (lowers CLS) */
+  @font-face {
+    font-family: 'InterFallback';
+    src: local('Arial');
+    ascent-override: 90%;
+    descent-override: 22.43%;
+    line-gap-override: 0%;
+    size-adjust: 107.4%;
+  }
   body {
-    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Inter', 'InterFallback', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     background: var(--paper);
     color: var(--ink);
     font-size: 17px;
@@ -168,7 +177,7 @@ const { title, description } = Astro.props;
   .btn {
     display: inline-block;
     padding: 0.85rem 1.5rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'InterFallback', system-ui, sans-serif;
     font-size: 0.92rem;
     font-weight: 500;
     text-decoration: none;
@@ -348,7 +357,7 @@ const { title, description } = Astro.props;
     gap: 3rem;
     margin-bottom: 2rem;
   }
-  footer h4 {
+  footer h3 {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 500;
     font-size: 1.05rem;
@@ -371,7 +380,7 @@ const { title, description } = Astro.props;
     font-size: 0.7rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(250, 250, 247, 0.5);
+    color: rgba(250, 250, 247, 0.66);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
