@@ -1,1 +1,384 @@
-LS0tCmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vbGF5b3V0cy9MYXlvdXQuYXN0cm8nOwoKY29uc3QgdGl0bGUgPSAiQWx0ZXJhdGlvbnMgYnkgTmljb2xlIMK3IFRhaWxvcmluZyAmIEFsdGVyYXRpb25zIFN0dWRpbyDCtyBCcmlzdG9sIjsKY29uc3QgZGVzY3JpcHRpb24gPSAiQWx0ZXJhdGlvbnMgYnkgTmljb2xlIGlzIGEgQnJpc3RvbC1iYXNlZCB0YWlsb3JpbmcgYW5kIGFsdGVyYXRpb25zIHN0dWRpby4gRm9ybWVyIEthcmVuIE1pbGxlbiBtb2RlbCBtYWtlcjsgZXhwZXJpZW5jZSB3aXRoIENvYXN0LCBPYXNpcywgQ2hhbmVsLCBNaXUgTWl1IGFuZCBDYW1lcm9uIEJhbGxvb25zLiBFdmVyeWRheSBhbHRlcmF0aW9ucywgc3VpdCB0YWlsb3JpbmcsIGJyaWRhbCBhbmQgb2NjYXNpb24td2Vhci4gQnkgYXBwb2ludG1lbnQuIjsKLS0tCgo8TGF5b3V0IHRpdGxlPXt0aXRsZX0gZGVzY3JpcHRpb249e2Rlc2NyaXB0aW9ufT4KCiAgPG5hdiBjbGFzcz0idG9wIj4KICAgIDxkaXYgY2xhc3M9Im5hdi1pbm5lciI+CiAgICAgIDxhIGhyZWY9IiN0b3AiIGNsYXNzPSJicmFuZCI+QWx0ZXJhdGlvbnMgPGVtPmJ5PC9lbT4gTmljb2xlPC9hPgogICAgICA8ZGl2IGNsYXNzPSJuYXYtbGlua3MiPgogICAgICAgIDxhIGhyZWY9IiNzZXJ2aWNlcyI+U2VydmljZXM8L2E+CiAgICAgICAgPGEgaHJlZj0iI2ZhcSI+RkFRPC9hPgogICAgICAgIDxhIGhyZWY9IiNhYm91dCI+QWJvdXQ8L2E+CiAgICAgICAgPGEgaHJlZj0iI3Zpc2l0Ij5WaXNpdDwvYT4KICAgICAgICA8YSBocmVmPSIjY29udGFjdCI+Q29udGFjdDwvYT4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICA8L25hdj4KCiAgPGhlYWRlciBjbGFzcz0iaGVybyIgaWQ9InRvcCI+CiAgICA8ZGl2IGNsYXNzPSJ3cmFwIj4KICAgICAgPGRpdiBjbGFzcz0iaGVyby1leWVicm93Ij5CcmlzdG9sIMK3IEJ5IGFwcG9pbnRtZW50PC9kaXY+CiAgICAgIDxoMT5BbHRlcmF0aW9ucywgPGVtPmRvbmUgcmlnaHQ8L2VtPi48L2gxPgogICAgICA8cCBjbGFzcz0iaGVyby1zdWIiPkEgbmVpZ2hib3VyaG9vZCB0YWlsb3Jpbmcgc3R1ZGlvIGZvciBldmVyeWRheSBhbHRlcmF0aW9ucywgZm9ybWFsIHdlYXIsIGJyaWRhbCBhbmQgY2FyZWZ1bCByZXBhaXJzIOKAlCBhdCBhIGhvbWUgc3R1ZGlvIGluIEVtZXJzb25zIEdyZWVuLCBCcmlzdG9sLjwvcD4KICAgICAgPGRpdiBjbGFzcz0iY3RhcyI+CiAgICAgICAgPGEgaHJlZj0iI2NvbnRhY3QiIGNsYXNzPSJidG4gYnRuLXByaW1hcnkiPkdldCBhIHF1b3RlPC9hPgogICAgICAgIDxhIGhyZWY9InRlbDorNDQ3Nzc4Njc1NTcxIiBjbGFzcz0iYnRuIGJ0bi1naG9zdCI+Q2FsbCBvciBXaGF0c0FwcDwvYT4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICA8L2hlYWRlcj4KCiAgPHNlY3Rpb24gaWQ9InNlcnZpY2VzIj4KICAgIDxkaXYgY2xhc3M9IndyYXAiPgogICAgICA8ZGl2IGNsYXNzPSJzZWMtZXllYnJvdyI+MDEgwrcgU2VydmljZXM8L2Rpdj4KICAgICAgPGgyPlNpeCBjYXRlZ29yaWVzIG9mIDxlbT5jYXJlZnVsIHdvcms8L2VtPi48L2gyPgogICAgICA8cCBjbGFzcz0ibGVkZSI+VGhlIHNhbWUgY2FyZSBmb3IgYSDCoTE1IHppcCByZXBhaXIgYXMgZm9yIGEgwqEyMDAgYnJpZGFsIGFsdGVyYXRpb24uIEhvbmVzdCBwcmljaW5nLCBxdW90ZWQgaW4gd3JpdGluZyBhdCB0aGUgZmlyc3QgYXBwb2ludG1lbnQuPC9wPgoKICAgICAgPGRpdiBjbGFzcz0ic3ZjLWdyaWQiPgogICAgICAgIDxkaXYgY2xhc3M9InN2YyI+CiAgICAgICAgICA8aDM+RXZlcnlkYXkgYWx0ZXJhdGlvbnM8L2gzPgogICAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+SGVtcyDigJQgdHJvdXNlcnMsIGplYW5zLCBza2lydHMsIGRyZXNzZXM8L2xpPgogICAgICAgICAgICA8bGk+VGFrZSBpbiAmYW1wOyBsZXQgb3V0IOKAlCB3YWlzdCwgc2VhdCwgc2lkZXM8L2xpPgogICAgICAgICAgICA8bGk+U2xlZXZlIHNob3J0ZW5pbmc8L2xpPgogICAgICAgICAgICA8bGk+UmVzaXppbmcgZm9yIHdlaWdodCBjaGFuZ2U8L2xpPgogICAgICAgICAgPC91bD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJzdmMiPgogICAgICAgICAgPGgzPlJlcGFpcnM8L2gzPgogICAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+WmlwIHJlcGxhY2VtZW50PC9saT4KICAgICAgICAgICAgPGxpPkxpbmluZyByZXBhaXI8L2xpPgogICAgICAgICAgICA8bGk+UGF0Y2hpbmcgJmFtcDsgZGFybmluZzwvbGk+CiAgICAgICAgICAgIDxsaT5CdXR0b24gJmFtcDsgZmFzdGVuaW5nIHJlcGxhY2VtZW50PC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0ic3ZjIj4KICAgICAgICAgIDxoMz5TdWl0ICZhbXA7IGZvcm1hbCB0YWlsb3Jpbmc8L2gzPgogICAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+U3VpdCBqYWNrZXQgYWRqdXN0bWVudDwvbGk+CiAgICAgICAgICAgIDxsaT5Ucm91c2VyIGFsdGVyYXRpb25zPC9saT4KICAgICAgICAgICAgPGxpPldhaXN0Y29hdCByZXNpemluZzwvbGk+CiAgICAgICAgICAgIDxsaT5TaGlydCB0YWlsb3JpbmcgJmFtcDsgc2xpbS1maXR0aW5nPC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0ic3ZjIj4KICAgICAgICAgIDxoMz5CcmlkYWwgJmFtcDsgb2NjYXNpb24td2VhcjwvaDM+CiAgICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5XZWRkaW5nLWRyZXNzIGFsdGVyYXRpb25zICgyLTMgZml0dGluZ3MpPC9saT4KICAgICAgICAgICAgPGxpPkJ1c3RsZSBjcmVhdGlvbjwvbGk+CiAgICAgICAgICAgIDxsaT5CcmlkZXNtYWlkICZhbXA7IG1vdGhlci1vZi10aGUtYnJpZGU8L2xpPgogICAgICAgICAgICA8bGk+RXZlbmluZyAmYW1wOyBvY2Nhc2lvbi13ZWFyPC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0ic3ZjIj4KICAgICAgICAgIDxoMz5Db2F0cyAmYW1wOyBvdXRlcndlYXI8L2gzPgogICAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+Q29hdCBzaG9ydGVuaW5nICZhbXA7IHJlc2l6aW5nPC9saT4KICAgICAgICAgICAgPGxpPlNsZWV2ZSBhZGp1c3RtZW50PC9saT4KICAgICAgICAgICAgPGxpPkxpbmluZyByZXBhaXI8L2xpPgogICAgICAgICAgICA8bGk+QnV0dG9uIHJlcGxhY2VtZW50PC9saT4KICAgICAgICAgICAgPGxpPldheCByZXByb29maW5nICZhbXA7IHJlLXdheGluZyAoQmFyYm91ci1zdHlsZSB3YXhlZCBjb2F0cyk8L2xpPgogICAgICAgICAgPC91bD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJzdmMiPgogICAgICAgICAgPGgzPlJlc3R5bGluZyAmYW1wOyBzcGVjaWFsaXN0PC9oMz4KICAgICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkdhcm1lbnQgcmVtb2RlbGxpbmc8L2xpPgogICAgICAgICAgICA8bGk+VmludGFnZSAmYW1wOyBpbmhlcml0ZWQgcGllY2UgcmVzdG9yYXRpb248L2xpPgogICAgICAgICAgICA8bGk+UGx1cy1zaXplICZhbXA7IGluY2x1c2l2ZSByZXNpemluZzwvbGk+CiAgICAgICAgICA8L3VsPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvc2VjdGlvbj4KCiAgPHNlY3Rpb24gaWQ9ImZhcSI+CiAgICA8ZGl2IGNsYXNzPSJ3cmFwIj4KICAgICAgPGRpdiBjbGFzcz0ic2VjLWV5ZWJyb3ciPjAyIMK3IEZBUXM8L2Rpdj4KICAgICAgPGgyPkNvbW1vbiA8ZW0+cXVlc3Rpb25zPC9lbT4uPC9oMj4KCiAgICAgIDxkaXYgY2xhc3M9ImZhcS1saXN0Ij4KICAgICAgICA8ZGl2IGNsYXNzPSJmYXEtaXRlbSI+CiAgICAgICAgICA8aDM+SG93IGxvbmcgZG9lcyBhIGpvYiB1c3VhbGx5IHRha2U/PC9oMz4KICAgICAgICAgIDxwPk1vc3QgYWx0ZXJhdGlvbnMgYXJlIHJlYWR5IHdpdGhpbiAxMCBkYXlzLjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJmYXEtaXRlbSI+CiAgICAgICAgICA8aDM+RG8geW91IGRvIHdheCByZXByb29maW5nIGZvciBCYXJib3VyIGFuZCBzaW1pbGFyIHdheGVkIGNvYXRzPzwvaDM+CiAgICAgICAgICA8cD5ZZXMg4oCUIEJhcmJvdXIgamFja2V0IHJld2F4aW5nIGlzIG9uZSBvZiBOaWNvbGUncyBzcGVjaWFsaXRpZXMsIHN0YXJ0aW5nIGZyb20gwqE1NS4gQmFyYm91ciBqYWNrZXQgcmVwYWlycyBhcmUgYWxzbyBhdmFpbGFibGUg4oCUIGdldCBpbiB0b3VjaCBmb3IgYSBwcmljZS48L3A+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0iZmFxLWl0ZW0iPgogICAgICAgICAgPGgzPkhvdyBtdWNoIHdpbGwgaXQgY29zdD88L2gzPgogICAgICAgICAgPHA+RXZlcnkgam9iIGdldHMgYSBjbGVhciwgd3JpdHRlbiBwcmljZSBhdCB5b3VyIGZyZWUgY29uc3VsdGF0aW9uLCBidXQgYXMgYSBndWlkZTo8L3A+CiAgICAgICAgICA8dWwgY2xhc3M9InByaWNlLWxpc3QiPgogICAgICAgICAgICA8bGk+VHJvdXNlciBzaG9ydGVuaW5nIC8gdGFrZS1pbiDigJQgZnJvbSDCoTE0PC9saT4KICAgICAgICAgICAgPGxpPkRyZXNzIHNob3J0ZW5pbmcgLyB0YWtlLWluIOKAlCBmcm9tIMKhMjU8L2xpPgogICAgICAgICAgICA8bGk+U3VpdCBqYWNrZXQgYWx0ZXJhdGlvbnMg4oCUIGZyb20gwqEyMDwvbGk+CiAgICAgICAgICAgIDxsaT5aaXAgcmVwbGFjZW1lbnQg4oCUIGZyb20gwqExNDwvbGk+CiAgICAgICAgICAgIDxsaT5CYXJib3VyIGphY2tldCByZXdheGluZyDigJQgZnJvbSDCoTU1PC9saT4KICAgICAgICAgICAgPGxpPkFueXRoaW5nIGVsc2Ug4oCUIGp1c3QgZ2V0IGluIHRvdWNoPC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0iZmFxLWl0ZW0iPgogICAgICAgICAgPGgzPkRvIEkgbmVlZCB0byBib29rIGFuIGFwcG9pbnRtZW50PzwvaDM+CiAgICAgICAgICA8cD5ZZXMg4oCUIHRoZSBzdHVkaW8gaXMgaG9tZS1iYXNlZCBpbiBFbWVyc29ucyBHcmVlbiBhbmQgd29ya3Mgc3RyaWN0bHkgYnkgYXBwb2ludG1lbnQsIHNvIHlvdSBnZXQgcHJvcGVyIHRpbWUgZm9yIGEgZml0dGluZyBhbmQgY29uc3VsdGF0aW9uLjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJmYXEtaXRlbSI+CiAgICAgICAgICA8aDM+V2hhdCBpZiBJIGhhdmUgc2V2ZXJhbCBpdGVtcyB0byBicmluZyBpbj88L2gzPgogICAgICAgICAgPHA+SnVzdCBtZW50aW9uIGl0IHdoZW4geW91IGdldCBpbiB0b3VjaCBzbyB0aGVyZSdzIGVub3VnaCB0aW1lIHNldCBhc2lkZSBmb3IgZXZlcnl0aGluZy48L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9zZWN0aW9uPgoKICA8c2VjdGlvbiBpZD0iYWJvdXQiPgogICAgPGRpdiBjbGFzcz0id3JhcCI+CiAgICAgIDxkaXYgY2xhc3M9InNlYy1leWVicm93Ij4wMyDCtyBBYm91dCBOaWNvbGU8L2Rpdj4KICAgICAgPGgyPkEgd29ya2luZyBsaWZlIHNwZW50IDxlbT5tYWtpbmcgY2xvdGhlcyBwcm9wZXJseTwvZW0+LjwvaDI+CgogICAgICA8cCBjbGFzcz0ibGVkZSI+QWx0ZXJhdGlvbnMgYnkgTmljb2xlIGlzIGEgQnJpc3RvbC1iYXNlZCB0YWlsb3JpbmcgYW5kIGFsdGVyYXRpb25zIHN0dWRpbywgcnVuIGZyb20gaGVyIGhvbWUgd29ya3NwYWNlIGluIEVtZXJzb25zIEdyZWVuLjwvcD4KCiAgICAgIDxwPkZvcm1lcmx5IGEgbW9kZWwgbWFrZXIgYXQgS2FyZW4gTWlsbGVuLCBOaWNvbGUgaGFzIGFsc28gd29ya2VkIHdpdGggQ29hc3QsIE9hc2lzLCBDaGFuZWwgYW5kIE1pdSBNaXUg4oCUIGFuZCBvbiB0aGUgc3BlY2lhbGlzdCBmYWJyaWMgb2YgaG90IGFpciBiYWxsb29ucyBmb3IgQnJpc3RvbCdzIG93biBDYW1lcm9uIEJhbGxvb25zLjwvcD4KCiAgICAgIDxwPkhlciB3b3JrIHNwYW5zIHdlZGRpbmctZHJlc3MgYWx0ZXJhdGlvbnMgYW5kIGJyaWRhbCByZXN0eWxpbmcsIHN1aXQgYW5kIGZvcm1hbCB0YWlsb3JpbmcsIGdhcm1lbnQgcmVzdHlsaW5nLCBhbmQgZXZlcnlkYXkgaGVtcywgemlwcyBhbmQgcmVwYWlycy4gQWxsIGFwcG9pbnRtZW50cyBhcmUgYXJyYW5nZWQgaW4gYWR2YW5jZS48L3A+CgogICAgICA8ZGl2IGNsYXNzPSJjYWxsb3V0Ij4KICAgICAgICAiVGhlIHNhbWUgY2FyZSBmb3IgYSDCoTE1IHppcCByZXBhaXIgYXMgZm9yIGEgwqEyMDAgYnJpZGFsIGFsdGVyYXRpb24uIgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvc2VjdGlvbj4KCiAgPHNlY3Rpb24gaWQ9InZpc2l0Ij4KICAgIDxkaXYgY2xhc3M9IndyYXAiPgogICAgICA8ZGl2IGNsYXNzPSJzZWMtZXllYnJvdyI+MDQgwrcgVmlzaXQgdGhlIHN0dWRpbzwvZGl2PgogICAgICA8aDI+QnkgYXBwb2ludG1lbnQsIDxlbT5hdCB0aGUgaG9tZSBzdHVkaW88L2VtPi48L2gyPgoKICAgICAgPHA+VGhlIHN0dWRpbyBpcyBpbiBFbWVyc29ucyBHcmVlbiwgQnJpc3RvbCwgYW5kIHdvcmtzIHN0cmljdGx5IGJ5IGFwcG9pbnRtZW50IHNvIGVhY2ggY3VzdG9tZXIgaGFzIHRoZSB0aW1lIGFuZCBxdWlldCB0aGV5IG5lZWQgZm9yIGEgcHJvcGVyIGNvbnN1bHRhdGlvbiBhbmQgZml0dGluZy4gVGhlIGZ1bGwgYWRkcmVzcyBpcyBzaGFyZWQgb24gYm9va2luZyBjb25maXJtYXRpb24uPC9wPgoKICAgICAgPGRsIGNsYXNzPSJpbmZvLWdyaWQiPgogICAgICAgIDxkdD5BcmVhPC9kdD48ZGQ+RW1lcnNvbnMgR3JlZW4sIEJyaXN0b2wgQlMxNjwvZGQ+CiAgICAgICAgPGR0PlN0dWRpbyBhY2Nlc3M8L2R0PjxkZD5CeSBhcHBvaW50bWVudCDigJQgZ2V0IGluIHRvdWNoIGJ5IGVtYWlsLCBwaG9uZSBvciBXaGF0c0FwcDwvZGQ+CiAgICAgICAgPGR0PkNhdGNobWVudDwvZHQ+PGRkPkJTMTYsIEJTOCwgQlM2LCBCUzcgYW5kIHN1cnJvdW5kaW5nIEJyaXN0b2w8L2RkPgogICAgICAgIDxkdD5GaW5kIHVzIG9uIEdvb2dsZTwvZHQ+PGRkPjxhIGhyZWY9Imh0dHBzOi8vbWFwcy5hcHAuZ29vLmdsL0ZVOXlZOEUzY0ZvbVdHR045IiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciI+QWx0ZXJhdGlvbnMgYnkgTmljb2xlIG9uIEdvb2dsZSBNYXBzIOKGkjwvYT48L2RkPgogICAgICA8L2RsPgogICAgPC9kaXY+CiAgPC9zZWN0aW9uPgoKICA8c2VjdGlvbiBpZD0iY29udGFjdCI+CiAgICA8ZGl2IGNsYXNzPSJ3cmFwIj4KICAgICAgPGRpdiBjbGFzcz0ic2VjLWV5ZWJyb3ciPjA1IMK3IENvbnRhY3QgJmFtcDsgYm9va2luZzwvZGl2PgogICAgICA8aDI+R2V0IGluIHRvdWNoLjwvaDI+CgogICAgICA8cD5GaWxsIGluIHRoZSBmb3JtIGJlbG93LCBvciByZWFjaCBvdXQgYnkgZW1haWwgb3IgV2hhdHNBcHAgZGlyZWN0bHkuIENvbnN1bHRhdGlvbnMgYXJlIGZyZWUsIHRha2UgYWJvdXQgaGFsZiBhbiBob3VyLCBhbmQgZW5kIHdpdGggYSBjbGVhciB3cml0dGVuIHByaWNlLjwvcD4KCiAgICAgIDxmb3JtIGlkPSJlbnF1aXJ5LWZvcm0iIGNsYXNzPSJlbnF1aXJ5LWZvcm0iPgogICAgICAgIDxpbnB1dCB0eXBlPSJjaGVja2JveCIgbmFtZT0iYm90Y2hlY2siIGNsYXNzPSJocC1maWVsZCIgdGFiaW5kZXg9Ii0xIiBhdXRvY29tcGxldGU9Im9mZiIgLz4KICAgICAgICA8aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJhY2Nlc3Nfa2V5IiB2YWx1ZT0iYzdiOWUwNzAtMTM3Mi00ZTIxLTg4MzYtZmRhYjQ1N2E0NDFjIiAvPgogICAgICAgIDxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InN1YmplY3QiIHZhbHVlPSJOZXcgZW5xdWlyeSDigJQgQWx0ZXJhdGlvbnMgYnkgTmljb2xlIHdlYnNpdGUiIC8+CiAgICAgICAgPGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0iZnJvbV9uYW1lIiB2YWx1ZT0iQWx0ZXJhdGlvbnMgYnkgTmljb2xlIHdlYnNpdGUiIC8+CgogICAgICAgIDxkaXYgY2xhc3M9ImZvcm0tcm93Ij4KICAgICAgICAgIDxkaXYgY2xhc3M9ImZpZWxkIj4KICAgICAgICAgICAgPGxhYmVsIGZvcj0iZWYtbmFtZSI+TmFtZTwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCBpZD0iZWYtbmFtZSIgdHlwZT0idGV4dCIgbmFtZT0ibmFtZSIgcmVxdWlyZWQgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0iZmllbGQiPgogICAgICAgICAgICA8bGFiZWwgZm9yPSJlZi1lbWFpbCI+RW1haWw8L2xhYmVsPgogICAgICAgICAgICA8aW5wdXQgaWQ9ImVmLWVtYWlsIiB0eXBlPSJlbWFpbCIgbmFtZT0iZW1haWwiIHJlcXVpcmVkIC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0iZm9ybS1yb3ciPgogICAgICAgICAgPGRpdiBjbGFzcz0iZmllbGQiPgogICAgICAgICAgICA8bGFiZWwgZm9yPSJlZi1waG9uZSI+UGhvbmUgKG9wdGlvbmFsKTwvbGFiZWw+CiAgICAgICAgICAgIDxpbnB1dCBpZD0iZWYtcGhvbmUiIHR5cGU9InRlbCIgbmFtZT0icGhvbmUiIC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3M9ImZpZWxkIj4KICAgICAgICAgICAgPGxhYmVsIGZvcj0iZWYtc2VydmljZSI+V2hhdCBkbyB5b3UgbmVlZD88L2xhYmVsPgogICAgICAgICAgICA8c2VsZWN0IGlkPSJlZi1zZXJ2aWNlIiBuYW1lPSJzZXJ2aWNlIj4KICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJFdmVyeWRheSBhbHRlcmF0aW9ucyI+RXZlcnlkYXkgYWx0ZXJhdGlvbnM8L29wdGlvbj4KICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJSZXBhaXJzIj5SZXBhaXJzPC9vcHRpb24+CiAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iU3VpdCAmIGZvcm1hbCB0YWlsb3JpbmciPlN1aXQgJmFtcDsgZm9ybWFsIHRhaWxvcmluZzwvb3B0aW9uPgogICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IkJyaWRhbCAmIG9jY2FzaW9uLXdlYXIiPkJyaWRhbCAmYW1wOyBvY2Nhc2lvbi13ZWFyPC9vcHRpb24+CiAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iQ29hdHMgJiBvdXRlcndlYXIiPkNvYXRzICZhbXA7IG91dGVyd2Vhcjwvb3B0aW9uPgogICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IlJlc3R5bGluZyAmIHNwZWNpYWxpc3QiPlJlc3R5bGluZyAmYW1wOyBzcGVjaWFsaXN0PC9vcHRpb24+CiAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iTm90IHN1cmUgeWV0Ij5Ob3Qgc3VyZSB5ZXQ8L29wdGlvbj4KICAgICAgICAgICAgPC9zZWxlY3Q+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0iZmllbGQiPgogICAgICAgICAgPGxhYmVsIGZvcj0iZWYtbWVzc2FnZSI+VGVsbCB1cyB3aGF0IHlvdSBuZWVkPC9sYWJlbD4KICAgICAgICAgIDx0ZXh0YXJlYSBpZD0iZWYtbWVzc2FnZSIgbmFtZT0ibWVzc2FnZSIgcm93cz0iNCIgcmVxdWlyZWQgcGxhY2Vob2xkZXI9ImUuZy4gV2VkZGluZyBkcmVzcyBuZWVkcyB0YWtpbmcgaW4gYXQgdGhlIHdhaXN0LCBuZWVkIGl0IGRvbmUgYnkgMTIgT2N0b2JlciI+PC90ZXh0YXJlYT4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGJ1dHRvbiB0eXBlPSJzdWJtaXQiIGNsYXNzPSJidG4gYnRuLXByaW1hcnkiIGlkPSJlZi1zdWJtaXQiPlNlbmQgZW5xdWlyeTwvYnV0dG9uPgogICAgICAgIDxwIGNsYXNzPSJmb3JtLXN0YXR1cyIgaWQ9ImVmLXN0YXR1cyIgcm9sZT0ic3RhdHVzIiBhcmlhLWxpdmU9InBvbGl0ZSI+PC9wPgogICAgICA8L2Zvcm0+CgogICAgICA8ZGwgY2xhc3M9ImluZm8tZ3JpZCIgc3R5bGU9Im1hcmdpbi10b3A6IDNyZW07Ij4KICAgICAgICA8ZHQ+RW1haWw8L2R0PjxkZD48YSBocmVmPSJtYWlsdG86bmljb2xlLmFsdGVyYXRpb25zQGdtYWlsLmNvbSI+bmljb2xlLmFsdGVyYXRpb25zQGdtYWlsLmNvbTwvYT48L2RkPgogICAgICAgIDxkdD5QaG9uZSAvIFdoYXRzQXBwPC9kdD48ZGQ+PGEgaHJlZj0idGVsOis0NDc3Nzg2NzU1NzEiPis0NCA3Nzc4IDY3NTU3MTwvYT48L2RkPgogICAgICAgIDxkdD5GYWNlYm9vazwvZHQ+PGRkPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmZhY2Vib29rLmNvbS9zaGFyZS8xTlM5R0ZvNXhCLyIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiPkFsdGVyYXRpb25zIGJ5IE5pY29sZSBvbiBGYWNlYm9vayDihpI8L2E+PC9kZD4KICAgICAgICA8ZHQ+R29vZ2xlIGxpc3Rpbmc8L2R0PjxkZD48YSBocmVmPSJodHRwczovL21hcHMuYXBwLmdvby5nbC9GVTl5WThFM2NGb21XR0dOOSIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiPkFsdGVyYXRpb25zIGJ5IE5pY29sZSBvbiBHb29nbGUg4oaSPC9hPjwvZGQ+CiAgICAgICAgPGR0PkZpbmQgdXM8L2R0PjxkZD5FbWVyc29ucyBHcmVlbiwgQnJpc3RvbCBCUzE2IMK3IGFkZHJlc3Mgc2hhcmVkIG9uIGNvbmZpcm1hdGlvbjwvZGQ+CiAgICAgIDwvZGw+CiAgICA8L2Rpdj4KICA8L3NlY3Rpb24+CgogIDxmb290ZXI+CiAgICA8ZGl2IGNsYXNzPSJmb290LXdyYXAiPgogICAgICA8ZGl2IGNsYXNzPSJmb290LWdyaWQiPgogICAgICAgIDxkaXY+CiAgICAgICAgICA8aDM+QWx0ZXJhdGlvbnMgYnkgTmljb2xlPC9oMz4KICAgICAgICAgIDxwPkEgQnJpc3RvbCB0YWlsb3JpbmcgYW5kIGFsdGVyYXRpb25zIHN0dWRpby4gSG9uZXN0LCBjYXJlZnVsIHdvcmsg4oCUIGJ5IGFwcG9pbnRtZW50LjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGgzPlF1aWNrIGxpbmtzPC9oMz4KICAgICAgICAgIDxwPgogICAgICAgICAgICA8YSBocmVmPSIjc2VydmljZXMiPlNlcnZpY2VzPC9hPiDCtyA8YSBocmVmPSIjZmFxIj5GQVE8L2E+IMK3IDxhIGhyZWY9IiNhYm91dCI+QWJvdXQ8L2E+IMK3IDxhIGhyZWY9IiN2aXNpdCI+VmlzaXQ8L2E+IMK3IDxhIGhyZWY9IiNjb250YWN0Ij5Db250YWN0PC9hPjxici8+CiAgICAgICAgICAgIDxhIGhyZWY9Im1haWx0bzpuaWNvbGUuYWx0ZXJhdGlvbnNAZ21haWwuY29tIj5FbWFpbCBOaWNvbGU8L2E+IMK3IDxhIGhyZWY9Imh0dHBzOi8vbWFwcy5hcHAuZ29vLmdsL0ZVOXlZOEUzY0ZvbVdHR045IiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciI+RmluZCB1cyBvbiBHb29nbGU8L2E+IMK3IDxhIGhyZWY9Imh0dHBzOi8vd3d3LmZhY2Vib29rLmNvbS9zaGFyZS8xTlM5R0ZvNXhCLyIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiPkZhY2Vib29rPC9hPgogICAgICAgICAgPC9wPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0iZm9vdC1tZXRhIj4KICAgICAgICA8c3Bhbj7CqSBBbHRlcmF0aW9ucyBieSBOaWNvbGUgwrcgQnJpc3RvbDwvc3Bhbj4KICAgICAgICA8c3Bhbj5EZXNpZ25lZCAmYW1wOyBidWlsdCBieSA8YSBocmVmPSJodHRwczovL3ZpcmdpbGRpZ2l0YWwuY28udWsiIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIj5WaXJnaWwgRGlnaXRhbDwvYT48L3NwYW4+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9mb290ZXI+Cgo8L0xheW91dD4KCjxzdHlsZT4KICAuZW5xdWlyeS1mb3JtIHsKICAgIG1heC13aWR0aDogNzAwcHg7CiAgICBtYXJnaW46IDJyZW0gMCAwOwogIH0KICAuZm9ybS1yb3cgewogICAgZGlzcGxheTogZ3JpZDsKICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjsKICAgIGdhcDogMS4yNXJlbTsKICB9CiAgLmZpZWxkIHsKICAgIG1hcmdpbi1ib3R0b206IDEuMjVyZW07CiAgfQogIC5maWVsZCBsYWJlbCB7CiAgICBkaXNwbGF5OiBibG9jazsKICAgIGZvbnQtZmFtaWx5OiAnSmV0QnJhaW5zIE1vbm8nLCBtb25vc3BhY2U7CiAgICBmb250LXNpemU6IDAuN3JlbTsKICAgIGxldHRlci1zcGFjaW5nOiAwLjEyZW07CiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOwogICAgY29sb3I6IHZhcigtLWluay1tdXRlKTsKICAgIG1hcmdpbi1ib3R0b206IDAuNHJlbTsKICB9CiAgLmZpZWxkIGlucHV0LAogIC5maWVsZCBzZWxlY3QsCiAgLmZpZWxkIHRleHRhcmVhIHsKICAgIHdpZHRoOiAxMDAlOwogICAgZm9udC1mYW1pbHk6ICdJbnRlcicsICdJbnRlckZhbGxiYWNrJywgc3lzdGVtLXVpLCBzYW5zLXNlcmlmOwogICAgZm9udC1zaXplOiAwLjk4cmVtOwogICAgY29sb3I6IHZhcigtLWluayk7CiAgICBiYWNrZ3JvdW5kOiB2YXIoLS1wYXBlcik7CiAgICBib3JkZXI6IDEuNXB4IHNvbGlkIHZhcigtLXJ1bGUpOwogICAgcGFkZGluZzogMC42NXJlbSAwLjhyZW07CiAgICB0cmFuc2l0aW9uOiBib3JkZXItY29sb3IgMC4ycztcbiAgfQogIC5maWVsZCB0ZXh0YXJlYSB7CiAgICByZXNpemU6IHZlcnRpY2FsOwogICAgbWluLWhlaWdodDogNnJlbTsKICB9CiAgLmZpZWxkIGlucHV0OmZvY3VzLAogIC5maWVsZCBzZWxlY3Q6Zm9jdXMsCiAgLmZpZWxkIHRleHRhcmVhOmZvY3VzIHsKICAgIG91dGxpbmU6IG5vbmU7CiAgICBib3JkZXItY29sb3I6IHZhcigtLWFjY2VudCk7CiAgfQogIC5ocC1maWVsZCB7CiAgICBwb3NpdGlvbjogYWJzb2x1dGU7CiAgICBsZWZ0OiAtOTk5OXB4OwogICAgb3BhY2l0eTogMDsKICAgIHBvaW50ZXItZXZlbnRzOiBub25lOwogIH0KICAuZW5xdWlyeS1mb3JtIGJ1dHRvblt0eXBlPSdzdWJtaXQnXSB7CiAgICBjdXJzb3I6IHBvaW50ZXI7CiAgICBmb250LWZhbWlseTogJ0ludGVyJywgJ0ludGVyRmFsbGJhY2snLCBzeXN0ZW0tdWksIHNhbnMtc2VyaWY7CiAgfQogIC5lbnF1aXJ5LWZvcm0gYnV0dG9uW3R5cGU9J3N1Ym1pdCddOmRpc2FibGVkIHsKICAgIG9wYWNpdHk6IDAuNjsKICAgIGN1cnNvcjogZGVmYXVsdDsKICB9CiAgLmZvcm0tc3RhdHVzIHsKICAgIG1hcmdpbjogMXJlbSAwIDA7CiAgICBmb250LXNpemU6IDAuOTJyZW07CiAgICBtYXgtd2lkdGg6IG5vbmU7CiAgfQogIC5mb3JtLXN0YXR1cy5zdWNjZXNzIHsKICAgIGNvbG9yOiAjMmY2ZjNlOwogIH0KICAuZm9ybS1zdGF0dXMuZXJyb3IgewogICAgY29sb3I6ICNhMzMxMmE7CiAgfQogIEBtZWRpYSAobWF4LXdpZHRoOiA3MjBweCkgewogICAgLmZvcm0tcm93IHsKICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7CiAgICB9CiAgfQo8L3N0eWxlPgoKPHNjcmlwdD4KICBjb25zdCBmb3JtID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2VucXVpcnktZm9ybScpIGFzIEhUTUxGb3JtRWxlbWVudCB8IG51bGw7CiAgY29uc3Qgc3RhdHVzID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2VmLXN0YXR1cycpOwogIGNvbnN0IHN1Ym1pdEJ0biA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdlZi1zdWJtaXQnKSBhcyBIVE1MQnV0dG9uRWxlbWVudCB8IG51bGw7CgogIGlmIChmb3JtICYmIHN0YXR1cyAmJiBzdWJtaXRCdG4pIHsKICAgIGZvcm0uYWRkRXZlbnRMaXN0ZW5lcignc3VibWl0JywgYXN5bmMgKGUpID0+IHsKICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpOwoKICAgICAgLy8gSG9uZXlwb3Q6IGlmIGEgYm90IGZpbGxlZCB0aGlzIGhpZGRlbiBmaWVsZCwgc2lsZW50bHkgZHJvcCB0aGUgc3VibWlzc2lvbi4KICAgICAgY29uc3QgaG9uZXlwb3QgPSBmb3JtLnF1ZXJ5U2VsZWN0b3IoJ2lucHV0W25hbWU9ImJvdGNoZWNrIl0nKSBhcyBIVE1MSW5wdXRFbGVtZW50IHwgbnVsbDsKICAgICAgaWYgKGhvbmV5cG90ICYmIGhvbmV5cG90LmNoZWNrZWQpIHsKICAgICAgICByZXR1cm47CiAgICAgIH0KCiAgICAgIHN1Ym1pdEJ0bi5kaXNhYmxlZCA9IHRydWU7CiAgICAgIHN1Ym1pdEJ0bi50ZXh0Q29udGVudCA9ICdTZW5kaW5n4oCmJzsKICAgICAgc3RhdHVzLnRleHRDb250ZW50ID0gJyc7CiAgICAgIHN0YXR1cy5jbGFzc05hbWUgPSAnZm9ybS1zdGF0dXMnOwoKICAgICAgdHJ5IHsKICAgICAgICBjb25zdCBmb3JtRGF0YSA9IG5ldyBGb3JtRGF0YShmb3JtKTsKICAgICAgICBjb25zdCBvYmplY3Q6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4gPSB7fTsKICAgICAgICBmb3JtRGF0YS5mb3JFYWNoKCh2YWx1ZSwga2V5KSA9PiB7CiAgICAgICAgICBvYmplY3Rba2V5XSA9IHZhbHVlLnRvU3RyaW5nKCk7CiAgICAgICAgfSk7CgogICAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goJ2h0dHBzOi8vYXBpLndlYjNmb3Jtcy5jb20vc3VibWl0JywgewogICAgICAgICAgbWV0aG9kOiAnUE9TVCcsCiAgICAgICAgICBoZWFkZXJzOiB7ICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbicsIEFjY2VwdDogJ2FwcGxpY2F0aW9uL2pzb24nIH0sCiAgICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShvYmplY3QpLAogICAgICAgIH0pOwogICAgICAgIGNvbnN0IHJlc3VsdCA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTsKCiAgICAgICAgaWYgKHJlc3VsdC5zdWNjZXNzKSB7CiAgICAgICAgICBzdGF0dXMudGV4dENvbnRlbnQgPSAiVGhhbmsgeW91IOKAlCB5b3VyIGVucXVpcnkgaGFzIGJlZW4gc2VudC4gTmljb2xlIHdpbGwgZ2V0IGJhY2sgdG8geW91IHNob3J0bHkuIjsKICAgICAgICAgIHN0YXR1cy5jbGFzc05hbWUgPSAnZm9ybS1zdGF0dXMgc3VjY2Vzcyc7CiAgICAgICAgICBmb3JtLnJlc2V0KCk7CiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgIHN0YXR1cy50ZXh0Q29udGVudCA9ICJTb21ldGhpbmcgd2VudCB3cm9uZyBzZW5kaW5nIHRoYXQuIFBsZWFzZSB0cnkgYWdhaW4sIG9yIGVtYWlsIG5pY29sZS5hbHRlcmF0aW9uc0BnbWFpbC5jb20gZGlyZWN0bHkuIjsKICAgICAgICAgIHN0YXR1cy5jbGFzc05hbWUgPSAnZm9ybS1zdGF0dXMgZXJyb3InOwogICAgICAgIH0KICAgICAgfSBjYXRjaCAoZXJyKSB7CiAgICAgICAgc3RhdHVzLnRleHRDb250ZW50ID0gIlNvbWV0aGluZyB3ZW50IHdyb25nIHNlbmRpbmcgdGhhdC4gUGxlYXNlIHRyeSBhZ2Fpbiwgb3IgZW1haWwgbmljb2xlLmFsdGVyYXRpb25zQGdtYWlsLmNvbSBkaXJlY3RseS4iOwogICAgICAgIHN0YXR1cy5jbGFzc05hbWUgPSAnZm9ybS1zdGF0dXMgZXJyb3InOwogICAgICB9IGZpbmFsbHkgewogICAgICAgIHN1Ym1pdEJ0bi5kaXNhYmxlZCA9IGZhbHNlOwogICAgICAgIHN1Ym1pdEJ0bi50ZXh0Q29udGVudCA9ICdTZW5kIGVucXVpcnknOwogICAgICB9CiAgICB9KTsKICB9Cjwvc2NyaXB0Pgo=
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Alterations by Nicole · Tailoring & Alterations Studio · Bristol";
+const description = "Alterations by Nicole is a Bristol-based tailoring and alterations studio. Former Karen Millen model maker; experience with Coast, Oasis, Chanel, Miu Miu and Cameron Balloons. Everyday alterations, suit tailoring, bridal and occasion-wear. By appointment.";
+---
+
+<Layout title={title} description={description}>
+
+  <nav class="top">
+    <div class="nav-inner">
+      <a href="#top" class="brand">Alterations <em>by</em> Nicole</a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#faq">FAQ</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-eyebrow">Bristol · By appointment</div>
+      <h1>Alterations, <em>done right</em>.</h1>
+      <p class="hero-sub">A neighbourhood tailoring studio for everyday alterations, formal wear, bridal and careful repairs — at a home studio in Emersons Green, Bristol.</p>
+      <div class="ctas">
+        <a href="#contact" class="btn btn-primary">Get a quote</a>
+        <a href="tel:+447778675571" class="btn btn-ghost">Call or WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-eyebrow">01 · Services</div>
+      <h2>Six categories of <em>careful work</em>.</h2>
+      <p class="lede">The same care for a £15 zip repair as for a £200 bridal alteration. Honest pricing, quoted in writing at the first appointment.</p>
+
+      <div class="svc-grid">
+        <div class="svc">
+          <h3>Everyday alterations</h3>
+          <ul>
+            <li>Hems — trousers, jeans, skirts, dresses</li>
+            <li>Take in &amp; let out — waist, seat, sides</li>
+            <li>Sleeve shortening</li>
+            <li>Resizing for weight change</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <h3>Repairs</h3>
+          <ul>
+            <li>Zip replacement</li>
+            <li>Lining repair</li>
+            <li>Patching &amp; darning</li>
+            <li>Button &amp; fastening replacement</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <h3>Suit &amp; formal tailoring</h3>
+          <ul>
+            <li>Suit jacket adjustment</li>
+            <li>Trouser alterations</li>
+            <li>Waistcoat resizing</li>
+            <li>Shirt tailoring &amp; slim-fitting</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <h3>Bridal &amp; occasion-wear</h3>
+          <ul>
+            <li>Wedding-dress alterations (2–3 fittings)</li>
+            <li>Bustle creation</li>
+            <li>Bridesmaid &amp; mother-of-the-bride</li>
+            <li>Evening &amp; occasion-wear</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <h3>Coats &amp; outerwear</h3>
+          <ul>
+            <li>Coat shortening &amp; resizing</li>
+            <li>Sleeve adjustment</li>
+            <li>Lining repair</li>
+            <li>Button replacement</li>
+            <li>Wax reproofing &amp; re-waxing (Barbour-style waxed coats)</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <h3>Restyling &amp; specialist</h3>
+          <ul>
+            <li>Garment remodelling</li>
+            <li>Vintage &amp; inherited piece restoration</li>
+            <li>Plus-size &amp; inclusive resizing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-eyebrow">02 · FAQs</div>
+      <h2>Common <em>questions</em>.</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>How long does a job usually take?</h3>
+          <p>Most alterations are ready within 10 days.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you do wax reproofing for Barbour and similar waxed coats?</h3>
+          <p>Yes — Barbour jacket rewaxing is one of Nicole's specialities, starting from £55. Barbour jacket repairs are also available — get in touch for a price.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How much will it cost?</h3>
+          <p>Every job gets a clear, written price at your free consultation, but as a guide:</p>
+          <ul class="price-list">
+            <li>Trouser shortening / take-in — from £14</li>
+            <li>Dress shortening / take-in — from £25</li>
+            <li>Suit jacket alterations — from £20</li>
+            <li>Zip replacement — from £14</li>
+            <li>Barbour jacket rewaxing — from £55</li>
+            <li>Anything else — just get in touch</li>
+          </ul>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need to book an appointment?</h3>
+          <p>Yes — the studio is home-based in Emersons Green and works strictly by appointment, so you get proper time for a fitting and consultation.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I have several items to bring in?</h3>
+          <p>Just mention it when you get in touch so there's enough time set aside for everything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-eyebrow">03 · About Nicole</div>
+      <h2>A working life spent <em>making clothes properly</em>.</h2>
+
+      <p class="lede">Alterations by Nicole is a Bristol-based tailoring and alterations studio, run from her home workspace in Emersons Green.</p>
+
+      <p>Formerly a model maker at Karen Millen, Nicole has also worked with Coast, Oasis, Chanel and Miu Miu — and on the specialist fabric of hot air balloons for Bristol's own Cameron Balloons.</p>
+
+      <p>Her work spans wedding-dress alterations and bridal restyling, suit and formal tailoring, garment restyling, and everyday hems, zips and repairs. All appointments are arranged in advance.</p>
+
+      <div class="callout">
+        "The same care for a £15 zip repair as for a £200 bridal alteration."
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-eyebrow">04 · Visit the studio</div>
+      <h2>By appointment, <em>at the home studio</em>.</h2>
+
+      <p>The studio is in Emersons Green, Bristol, and works strictly by appointment so each customer has the time and quiet they need for a proper consultation and fitting. The full address is shared on booking confirmation.</p>
+
+      <dl class="info-grid">
+        <dt>Area</dt><dd>Emersons Green, Bristol BS16</dd>
+        <dt>Studio access</dt><dd>By appointment — get in touch by email, phone or WhatsApp</dd>
+        <dt>Catchment</dt><dd>BS16, BS8, BS6, BS7 and surrounding Bristol</dd>
+        <dt>Find us on Google</dt><dd><a href="https://maps.app.goo.gl/FU9yY8E3cFomwGGN9" target="_blank" rel="noopener">Alterations by Nicole on Google Maps →</a></dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-eyebrow">05 · Contact &amp; booking</div>
+      <h2>Get in touch.</h2>
+
+      <p>Fill in the form below, or reach out by email or WhatsApp directly. Consultations are free, take about half an hour, and end with a clear written price.</p>
+
+      <form id="enquiry-form" class="enquiry-form">
+        <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" />
+        <input type="hidden" name="access_key" value="c7b9e070-1372-4e21-8836-fdab457a441c" />
+        <input type="hidden" name="subject" value="New enquiry — Alterations by Nicole website" />
+        <input type="hidden" name="from_name" value="Alterations by Nicole website" />
+
+        <div class="form-row">
+          <div class="field">
+            <label for="ef-name">Name</label>
+            <input id="ef-name" type="text" name="name" required />
+          </div>
+          <div class="field">
+            <label for="ef-email">Email</label>
+            <input id="ef-email" type="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="ef-phone">Phone (optional)</label>
+            <input id="ef-phone" type="tel" name="phone" />
+          </div>
+          <div class="field">
+            <label for="ef-service">What do you need?</label>
+            <select id="ef-service" name="service">
+              <option value="Everyday alterations">Everyday alterations</option>
+              <option value="Repairs">Repairs</option>
+              <option value="Suit & formal tailoring">Suit &amp; formal tailoring</option>
+              <option value="Bridal & occasion-wear">Bridal &amp; occasion-wear</option>
+              <option value="Coats & outerwear">Coats &amp; outerwear</option>
+              <option value="Restyling & specialist">Restyling &amp; specialist</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="ef-message">Tell us what you need</label>
+          <textarea id="ef-message" name="message" rows="4" required placeholder="e.g. Wedding dress needs taking in at the waist, need it done by 12 October"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="ef-submit">Send enquiry</button>
+        <p class="form-status" id="ef-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <dl class="info-grid" style="margin-top: 3rem;">
+        <dt>Email</dt><dd><a href="mailto:nicole.alterations@gmail.com">nicole.alterations@gmail.com</a></dd>
+        <dt>Phone / WhatsApp</dt><dd><a href="tel:+447778675571">+44 7778 675571</a></dd>
+        <dt>Facebook</dt><dd><a href="https://www.facebook.com/share/1NS9GFo5xB/" target="_blank" rel="noopener">Alterations by Nicole on Facebook →</a></dd>
+        <dt>Google listing</dt><dd><a href="https://maps.app.goo.gl/FU9yY8E3cFomwGGN9" target="_blank" rel="noopener">Alterations by Nicole on Google →</a></dd>
+        <dt>Find us</dt><dd>Emersons Green, Bristol BS16 · address shared on confirmation</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-wrap">
+      <div class="foot-grid">
+        <div>
+          <h3>Alterations by Nicole</h3>
+          <p>A Bristol tailoring and alterations studio. Honest, careful work — by appointment.</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <p>
+            <a href="#services">Services</a> · <a href="#faq">FAQ</a> · <a href="#about">About</a> · <a href="#visit">Visit</a> · <a href="#contact">Contact</a><br />
+            <a href="mailto:nicole.alterations@gmail.com">Email Nicole</a> · <a href="https://maps.app.goo.gl/FU9yY8E3cFomwGGN9" target="_blank" rel="noopener">Find us on Google</a> · <a href="https://www.facebook.com/share/1NS9GFo5xB/" target="_blank" rel="noopener">Facebook</a>
+          </p>
+        </div>
+      </div>
+      <div class="foot-meta">
+        <span>© Alterations by Nicole · Bristol</span>
+        <span>Designed &amp; built by <a href="https://virgildigital.co.uk" target="_blank" rel="noopener">Virgil Digital</a></span>
+      </div>
+    </div>
+  </footer>
+
+</Layout>
+
+<style>
+  .enquiry-form {
+    max-width: 700px;
+    margin: 2rem 0 0;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .field {
+    margin-bottom: 1.25rem;
+  }
+  .field label {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 0.4rem;
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    font-family: 'Inter', 'InterFallback', system-ui, sans-serif;
+    font-size: 0.98rem;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1.5px solid var(--rule);
+    padding: 0.65rem 0.8rem;
+    transition: border-color 0.2s;
+  }
+  .field textarea {
+    resize: vertical;
+    min-height: 6rem;
+  }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .enquiry-form button[type='submit'] {
+    cursor: pointer;
+    font-family: 'Inter', 'InterFallback', system-ui, sans-serif;
+  }
+  .enquiry-form button[type='submit']:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+  .form-status {
+    margin: 1rem 0 0;
+    font-size: 0.92rem;
+    max-width: none;
+  }
+  .form-status.success {
+    color: #2f6f3e;
+  }
+  .form-status.error {
+    color: #a3312a;
+  }
+  @media (max-width: 720px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('enquiry-form') as HTMLFormElement | null;
+  const status = document.getElementById('ef-status');
+  const submitBtn = document.getElementById('ef-submit') as HTMLButtonElement | null;
+
+  if (form && status && submitBtn) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Honeypot: if a bot filled this hidden field, silently drop the submission.
+      const honeypot = form.querySelector('input[name="botcheck"]') as HTMLInputElement | null;
+      if (honeypot && honeypot.checked) {
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+      status.textContent = '';
+      status.className = 'form-status';
+
+      try {
+        const formData = new FormData(form);
+        const object: Record<string, string> = {};
+        formData.forEach((value, key) => {
+          object[key] = value.toString();
+        });
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(object),
+        });
+        const result = await response.json();
+
+        if (result.success) {
+          status.textContent = "Thank you — your enquiry has been sent. Nicole will get back to you shortly.";
+          status.className = 'form-status success';
+          form.reset();
+        } else {
+          status.textContent = "Something went wrong sending that. Please try again, or email nicole.alterations@gmail.com directly.";
+          status.className = 'form-status error';
+        }
+      } catch (err) {
+        status.textContent = "Something went wrong sending that. Please try again, or email nicole.alterations@gmail.com directly.";
+        status.className = 'form-status error';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send enquiry';
+      }
+    });
+  }
+</script>
