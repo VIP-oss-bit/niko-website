@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alterationsbynicole.co.uk/sitemap.xml
