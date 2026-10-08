@@ -1,0 +1,25 @@
+{
+  "name": "Alterations by Nicole",
+  "description": "Bristol-based tailoring and alterations studio offering clothing alterations, repairs, bridal work, formal tailoring and garment restyling by appointment.",
+  "url": "https://alterationsbynicole.com/",
+  "resources": [
+    {
+      "name": "Alterations by Nicole website",
+      "url": "https://alterationsbynicole.com/",
+      "type": "website",
+      "description": "Services, FAQs, about information, studio details and contact options."
+    },
+    {
+      "name": "Services",
+      "url": "https://alterationsbynicole.com/#services",
+      "type": "webpage",
+      "description": "Everyday alterations, repairs, formal tailoring, bridal and occasion-wear, coats and restyling."
+    },
+    {
+      "name": "Contact and booking",
+      "url": "https://alterationsbynicole.com/#contact",
+      "type": "webpage",
+      "description": "Enquiry form, email, phone and WhatsApp contact details."
+    }
+  ]
+}
