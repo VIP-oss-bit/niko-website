@@ -1,6 +1,6 @@
 # Alterations by Nicole — Astro site
 
-A 1-page static site for [Alterations by Nicole](https://alterationsbynicole.co.uk), a Bristol-based tailoring and alterations studio.
+A 1-page static site for [Alterations by Nicole](https://alterationsbynicole.com), a Bristol-based tailoring and alterations studio.
 
 ## Stack
 
